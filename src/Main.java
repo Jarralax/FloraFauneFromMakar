@@ -6,8 +6,8 @@ public class Main
 	public static void main(String[] args)
 	{
 		Work work = new Work();
-		work.AmountAn = 1000;
-		work.AmountPl = 500;
+		work.AmountAn = 10000;
+		work.AmountPl = 5000;
 		work.ratioOfPredatorToAll = 0.01;
 		int An = 1000;//начальное кол-личество животных
 		int Pl = 500;//начальное кол-во растений
