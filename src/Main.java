@@ -6,12 +6,10 @@ public class Main
 	public static void main(String[] args)
 	{
 		Work work = new Work();
-		work.AmountAn = 10000;
-		work.AmountPl = 5000;
-		work.ratioOfPredatorToAll = 0.01;
-		int An = 1000;//начальное кол-личество животных
-		int Pl = 500;//начальное кол-во растений
-		FrameOfPopulation frame = new FrameOfPopulation(An, Pl, work);
+		work.AmountAn = 1000;//начальное кол-личество животных
+		work.AmountPl = 500;//начальное кол-во растений
+		work.ratioOfPredatorToAll = 0.5;//если ==0, то случайным образом
+		FrameOfPopulation frame = new FrameOfPopulation(work);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 	}

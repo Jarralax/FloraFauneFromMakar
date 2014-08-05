@@ -40,7 +40,7 @@ public class Work
 				tempA = new Animals(rand.nextDouble()*998, rand.nextDouble()*799,0);
 				anH.add(tempA);
 			}
-			for(int i=0;i<AmountAn*(1-ratioOfPredatorToAll);i++)
+			for(int i=0;i<AmountAn*ratioOfPredatorToAll;i++)
 			{//создаем хищников
 				tempA = new Animals(rand.nextDouble()*998, rand.nextDouble()*799,1);
 				anP.add(tempA);
@@ -64,16 +64,16 @@ public class Work
 		for(int i=0;i<AmountAnP;i++)
 		{
 			tempA = anP.get(i);
-			tempA.x += rand.nextDouble()*2-1; 
-			tempA.y += rand.nextDouble()*2-1;
+			tempA.x += rand.nextDouble()*8-4; 
+			tempA.y += rand.nextDouble()*8-4;
 			anP.set(i, tempA);
 		}
 		
 		for(int i=0;i<AmountAnH;i++)
 		{
 			tempA = anH.get(i);
-			tempA.x += rand.nextDouble()*2-1; 
-			tempA.y += rand.nextDouble()*2-1;
+			tempA.x += rand.nextDouble()*8-4; 
+			tempA.y += rand.nextDouble()*8-4;
 			anH.set(i, tempA);
 		}
 		
@@ -84,7 +84,7 @@ public class Work
 			tempP.x++; tempP.y++;
 			pl.set(i, tempP);
 		}//*/
-		try{Thread.sleep(50);}
+		try{Thread.sleep(1);}
 		catch(Exception e){}
 	}
 	

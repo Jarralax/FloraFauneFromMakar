@@ -18,7 +18,9 @@ public class Animals
 	{
 		this.x = x; this.y = y; 
 		Random rand = new Random();
-		species = rand.nextInt()%2;
+		if(rand.nextBoolean())
+			species = 1;
+		
 	}
 	public Animals(double x, double y, int q)
 	{
@@ -27,7 +29,7 @@ public class Animals
 		Random rand = new Random();
 		species = rand.nextInt()%2;
 	}
-	public int species;//вид
+	public int species = 0;//вид
 	private int size;//размер
 	private int appetite ;//аппетит
 	private int radiusOfVisibility ;//радиус видимости
